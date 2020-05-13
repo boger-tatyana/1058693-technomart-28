@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Татьяна Богер](https://up.htmlacademy.ru/htmlcss/28/user/1058693).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 

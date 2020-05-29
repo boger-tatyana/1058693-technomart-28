@@ -6,22 +6,26 @@
   <meta name="description" content="Интернет-магазин инструментов и стройматериалов">
   <meta name="keywords" content="инструменты, материалы, ремонт, дрели">
   <title>Главная страница - Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
+
     <div class="header-navigation">
       <a class="logo-back">
-        <img class="logo" src="img/png/logo.png" width="109" height="19" alt="Логотип магазина Техномарт">
+        <img class="logo" src="img/svg/logo-technomart.svg" width="109" height="19" alt="Логотип магазина Техномарт">
       </a>
 
+
       <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+          <path
+            d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+        </svg>
         <input type="search" id="search" name="search" placeholder="Поиск:">
-        <label for="search" class="icon-search">Поиск</label>
+        <label for="search" class="icon-search"></label>
       </form>
 
       <ul class="header-list">
@@ -33,14 +37,13 @@
     <div class="align-header-info container">
       <div class="header-info">
         <h1>
-          Интернет-магазин<br>
-          строительных материалов<br>
+          Интернет-магазин строительных материалов<br>
           и инструментов для ремонта
         </h1>
       </div>
 
       <div class="header-contacts">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a><br>
+        <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
       </div>
 
@@ -63,10 +66,10 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <section class="goods-services">
+  <main>
+    <section class="goods-services container">
       <div class="flex-row1">
-        <div class="materials">
+        <div class="materials flag-new-index">
           <h2>Материалы</h2>
           <a href="#">На любой вкус</a>
         </div>
@@ -81,11 +84,15 @@
       </div>
       <div class="flex-row2">
         <div class="slider">
-          <div class="sliders-control">
-            <input class="first-slide" type="radio" id="button-1" name="slide" checked>
-            <label for="button-1"></label>
-            <input class="next-slide" type="radio" id="button-2" name="slide">
-            <label for="button-2"></label>
+          <input class="visually-hidden radio-1" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden radio-2" type="radio" id="product-2" name="toggle">
+          <div class="button-slider-controls">
+            <label class="slider-controls-item slider-controls-item-1" for="product-1"></label>
+            <label class="slider-controls-item slider-controls-item-2" for="product-2"></label>
+          </div>
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item-1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item-2" for="product-2">Второй</label>
           </div>
           <ul class="slider-list">
             <li class="slider-item">
@@ -112,7 +119,7 @@
         </div>
       </div>
     </section>
-    <section class="items-popular">
+    <section class="items-popular container">
       <div class="topic-popular">
         <h2>Популярные товары:</h2>
         <a href="#">Все популярные товары</a>
@@ -169,7 +176,7 @@
         </div>
       </div>
     </section>
-    <section class="popular-brands">
+    <section class="popular-brands container">
       <div class="topic-brands">
         <h2>Популярные производители:</h2>
         <a href="#">Все производители</a>
@@ -181,45 +188,47 @@
               alt="Логотип makita"></a></li>
         <li><a class="logo-brand" href="#"><img src="img/png/de-walt.png" width="146" height="44"
               alt="Логотип dewalt"></a></li>
-        <li><a class="logo-brand" href="#"><img src="img/png/interscol.png" width="200" height="88"
+        <li><a class="logo-brand null-margin" href="#"><img src="img/png/interscol.png" width="200" height="88"
               alt="Логотип interscol"></a></li>
         <li><a class="logo-brand" href="#"><img src="img/png/hitachi.png" width="169" height="31"
               alt="Логотип hitachi"></a></li>
         <li><a class="logo-brand" href="#"><img src="img/png/lg.png" width="121" height="73" alt="Логотип lg"></a></li>
         <li><a class="logo-brand" href="#"><img src="img/png/aeg.png" width="151" height="96" alt="Логотип aeg"></a>
         </li>
-        <li><a class="logo-brand" href="#"><img src="img/png/metabo.png" width="204" height="69"
+        <li><a class="logo-brand null-margin" href="#"><img src="img/png/metabo.png" width="204" height="69"
               alt="Логотип metabo"></a></li>
       </ul>
     </section>
-    <section class="servises">
-      <div>
+    <section class="services">
+      <div class="container">
+        <div class="text-wrapper">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <div class="servises-slider">
-          <input id="delivery" type="radio" name="service-btn" checked>
+        </div>
+        <div class="services-slider">
+          <input class="service-btn-delivery active-delivery" id="delivery" type="radio" name="service-btn" checked>
           <label for="delivery">Доставка</label>
-          <input id="garanty" type="radio" name="service-btn">
+          <input class="service-btn-garanty active-garanty" id="garanty" type="radio" name="service-btn">
           <label for="garanty">Гарантия</label>
-          <input id="credit" type="radio" name="service-btn">
+          <input class="service-btn-credit active-credit" id="credit" type="radio" name="service-btn">
           <label for="credit">Кредит</label>
         </div>
-        <ul class="servises-items">
-          <li class="item-delivery">
+        <ul class="services-items">
+          <li class="services-item item-delivery">
             <h3>Доставка</h3>
             <p>Мы судовольствием доставим Ваш товар, прямо к вашему подъезду, совершенно бесплатно!</p>
             <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
           </li>
-          <li class="item-garanty">
+          <li class="services-item item-garanty">
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей
               гарантии. Мы обменяем сгоревший товар на новый.</p>
             <p> Дом уж восстановите как-нибудь сами.</p>
           </li>
-          <li class="item-credit">
+          <li class="item-credit services-item">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще!</p>
             <p>Кредитные консультанты придут вам на помощь.</p>
@@ -229,8 +238,8 @@
       </div>
     </section>
     <div>
-      <section class="company-contacts">
-        <div>
+      <section class="company container">
+        <div class="company-about">
           <h2>Компания &laquo;Техномарт&raquo;</h2>
           <p>
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
@@ -250,14 +259,14 @@
           <a class="button-company" href="#">Подробнее о компании</a>
         </div>
 
-        <div>
+        <div class="company-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
-          <a href="img/png/map.png">
+          <a class="map" href="img/png/map.png">
             <img src="img/png/map.png" width="300" height="158" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
           </a>
-          <button type="button">Заблудились? Напишите нам!</button>
+          <button class="feedback-button" type="button">Заблудились? Напишите нам!</button>
         </div>
 
       </section>
@@ -266,10 +275,12 @@
 
   <footer class="footer">
     <div class="upper-info">
-      <div class="upper-info-wrapper container">
-        <section class="logo-back">
+        <div class="footer-row">
+        <section class="logo-footer">
           <h3 class="visually-hidden">Логотип магазина</h3>
-          <img class="logo" src="img/png/logo.png" width="138" height="23" alt="Логотип магазина Техномарт">
+          <a href="index.html">
+          <img class="logo-down" src="img/svg/logo-technomart.svg" width="138" height="23" alt="Логотип магазина Техномарт">
+          </a>
         </section>
 
         <ul class="upper-navigation">
@@ -279,7 +290,8 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <div>
+      </div>
+        <div class="footer-row">
           <address>г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address><br>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           <ul class="upper-navigation">
@@ -289,11 +301,9 @@
             <li><a href="#">Спецпредложения</a></li>
           </ul>
         </div>
-      </div>
     </div>
 
     <div class="footer-info">
-      <!--100% ширины-->
       <div class="footer-info-wrapper container">
         <p class="copy">&copy;2010-2019 Компания &laquo;Техномарт&raquo;<br>
           Все права защищены</p>

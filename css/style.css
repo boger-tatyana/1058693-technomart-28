@@ -775,6 +775,165 @@ img {
   display: flex;
 }
 
+.item {
+  border: 1px solid #eaeaea;
+  width: 220px;
+  height: 316px;
+  margin-bottom: 20px;
+}
+
+.item:not(:last-of-type) {
+  margin-right: 18px;
+}
+
+.item figure {
+  margin: 0;
+}
+
+.item-card img {
+  margin-bottom: -12px;
+}
+
+.actions {
+  margin-top: 46px;
+  margin-bottom: 40px;
+  display: none;
+}
+
+.actions .buy,
+.actions .marker {
+  display: block;
+	width: 135px;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	padding: 7px 0;
+	border-radius: 3px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", sans-serif;
+	line-height: 1.29;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.buy {
+  background-color: #63a63e;
+  border-bottom: 3px solid #367315;
+  position: relative;
+}
+
+.buy::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  background-image: url("../img/svg/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+
+}
+
+.buy:hover::before{
+  opacity: 1;
+}
+
+.buy:hover {
+  background-color: #5fbb2d;
+}
+
+.buy:active {
+  background-color: #518534;
+}
+
+.actions .marker {
+  color: #32425c;
+  background: #ffffff;
+  border: 3px solid #63a63e;
+  width: 129px;
+}
+
+.marker:hover {
+  border-color: #32425c;
+}
+
+.marker:active {
+  opacity: 0.3;
+}
+
+.item-description {
+  margin-right: 33px;
+  margin-left: 32px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  padding-top: 12px;
+}
+
+.item-description a {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.06;
+  margin-bottom: 9px;
+}
+
+.margin-price {
+  margin-top: 39px;
+}
+
+.item-description a,
+.old-price,
+.price {
+  display: block;
+  text-align: center;
+}
+
+.old-price,
+.price {
+  font-size: 17px;
+}
+
+.old-price {
+  margin-bottom: 7px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.price {
+  position: relative;
+  padding: 9px 40px;
+  padding-top: 7px;
+  padding-left: 36px;
+  color: #ffffff;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.price::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: -20px;
+  border: 20px solid #ffffff;
+  border-left: 20px solid #ee3643;
+}
+
+.item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.item:hover .actions {
+  display: block;
+}
+
+.item:hover .item-card img{
+  display: none;
+}
+
 .popular-brands {
   margin-bottom: 65px;
 }
@@ -928,14 +1087,14 @@ img {
 .service-btn-credit:focus ~ label[for="credit"] {
   color: #f2f6f8;
   background: #293449;
-  border-top: 1px solid #293449 ;
-  border-bottom: 1px solid  #293449;
+  border-top: 1px solid #293449;
+  border-bottom: 1px solid #293449;
 }
 
 .service-btn-delivery:checked ~ .services-items .services-item:nth-child(1),
 .service-btn-garanty:checked ~ .services-items .services-item:nth-child(2),
-.service-btn-credit:checked ~ .services-items  .services-item:nth-child(3){
-	display: block;
+.service-btn-credit:checked ~ .services-items .services-item:nth-child(3) {
+  display: block;
 }
 /*тут не могу понять, почему переключение сервисов не работает */
 
@@ -992,7 +1151,7 @@ img {
   background-color: #ee3643;
 }
 
-.partners li:not(:last-child){
+.partners li:not(:last-child) {
   margin-bottom: 20px;
 }
 

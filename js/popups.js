@@ -1,10 +1,11 @@
 var feedbackButton = document.querySelector(".feedback-button");
 var modalFeedback = document.querySelector(".modal-feedback");
-var modalFeedbackClose = modalFeedback.querySelector(".button-feedback-close");
-var userName = modalFeedback.querySelector(".user-name");
-var modalFeedbackForm = modalFeedback.querySelector(".modal-feedback-form");
-var userEmail = modalFeedback.querySelector(".user-email");
-var textarea = modalFeedback.querySelector(".textarea");
+var modalFeedbackClose = !!modalFeedback && modalFeedback.querySelector(".button-feedback-close");
+var userName = !!modalFeedback && modalFeedback.querySelector(".user-name");
+var modalFeedbackForm = !!modalFeedback && modalFeedback.querySelector(".modal-feedback-form");
+var userEmail = !!modalFeedback && modalFeedback.querySelector(".user-email");
+var textarea = !!modalFeedback && modalFeedback.querySelector(".textarea");
+if (feedbackButton != null) {
 feedbackButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalFeedback.classList.add("modal-show");
@@ -59,8 +60,8 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+}
 
-//Модальное окно в каталоге не работает почему-то
 var buy = document.querySelectorAll(".buy");
 var modalBasket = document.querySelector(".modal-basket");
 var modalBasketClose = modalBasket.querySelector(".modal-basket-close");

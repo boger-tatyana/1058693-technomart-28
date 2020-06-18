@@ -352,10 +352,6 @@ input[type="search"]::placeholder {
   opacity: 0.3;
 }
 
-.basket--catalog {
-  background-color: var(--basic-red);
-}
-
 .header-list,
 .navigation-list,
 .slider-item,

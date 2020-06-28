@@ -8,7 +8,7 @@
     content="перфораторы, сетевые первфораторы, аккумуляторные перфораторы, boch, hitachi, интерскол">
   <title>Перфораторы - Техномарт</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style_min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,15 +49,16 @@
               d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
           </svg>
           Равшан Джамшутович
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-            <path d="M14.875 8.5L6 0v6H0v5h6v6z" />
-            <path
-              d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
-          </svg>
+        </a>
+        <a class="exit" href="#" aria-label="Выход из профиля">
+          <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z"/>
+            <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z"/>
+            </svg>
         </a>
         <a class="user-order-list" href="#">Мои заказы</a>
         <a class="user-login-room" href="#">Личный кабинет</a>
-        <a href="#" aria-label="Выход из профиля"></a>
+
       </div>
     </div>
     <nav>
@@ -102,8 +103,8 @@
                 <div class="range-control-scale">
                   <div class="range-control-bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
               </div>
               <div class="price-control">
                 <label class="min-price">
@@ -146,11 +147,11 @@
         <div class="sort">
           <p>Сортировка:</p>
           <div class="sort-block">
-            <a href="#">по цене</a>
-            <a href="#">по типу</a>
-            <a href="#">по функционалу</a>
+            <a class="sort-link sort-link-active" href="#">по цене</a>
+            <a class="sort-link" href="#">по типу</a>
+            <a  class="sort-link" href="#">по функционалу</a>
             <div class="sort-buttons">
-              <a class="arrow-up" href="#">
+              <a class="arrow-up arrow-active" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path d="M5.5 0L0 10h11z" /></svg>
               </a>
@@ -164,7 +165,7 @@
         <div class="all-items">
           <h2 class="visually-hidden">Список товаров</h2>
           <div class="items-catalog">
-            <div class="item">
+            <div class="item" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-1.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 3000">
@@ -179,7 +180,7 @@
                 <span class="price">25500 Р.</span>
               </div>
             </div>
-            <div class="item">
+            <div class="item" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-2.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 6000">
@@ -194,7 +195,7 @@
                 <span class="price">25500 Р.</span>
               </div>
             </div>
-            <div class="item flag-new">
+            <div class="item flag-new" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-1.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 2000">
@@ -209,7 +210,7 @@
                 <span class="price">25500 Р.</span>
               </div>
             </div>
-            <div class="item flag-new">
+            <div class="item flag-new" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-1.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 3000">
@@ -224,7 +225,7 @@
                 <span class="price">15500 Р.</span>
               </div>
             </div>
-            <div class="item">
+            <div class="item" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-2.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 6000">
@@ -239,7 +240,7 @@
                 <span class="price">25500 Р.</span>
               </div>
             </div>
-            <div class="item flag-new">
+            <div class="item flag-new" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-1.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 2000">
@@ -253,7 +254,7 @@
                 <span class="price margin-price">12500 Р.</span>
               </div>
             </div>
-            <div class="item flag-new">
+            <div class="item flag-new" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-1.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 3000">
@@ -268,7 +269,7 @@
                 <span class="price">15500 Р.</span>
               </div>
             </div>
-            <div class="item">
+            <div class="item" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-2.jpg" width="218" height="170"
                   alt="Избражение перфоратора BOCH BFG 6000">
@@ -283,7 +284,7 @@
                 <span class="price">25500 Р.</span>
               </div>
             </div>
-            <div class="item flag-new">
+            <div class="item flag-new" tabindex="0">
               <figure class="item-card">
                 <img class="item-image" src="img/jpg/item-1.jpg" width="218" height="170"
                   alt="Перфоратор BOCH BFG 2000">
@@ -381,7 +382,7 @@
       <a class="continue" href="catalog.html">Продолжить покупки</a>
     </div>
   </section>
-  <script src="js/popups.js"></script>
+  <script src="js/popups_min.js"></script>
 </body>
 
 </html>

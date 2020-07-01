@@ -374,7 +374,7 @@ input[type="search"]::placeholder {
 
 .align-header-info {
   display: flex;
-  justify-content: space-around;
+
   align-items: flex-start;
   min-height: 60px;
   margin-left: auto;
@@ -499,10 +499,9 @@ input[type="search"]::placeholder {
   width: auto;
   font-family: var(--cuprum);
   font-size: 17px;
-  display: block;
-  padding: 20px 31px;
   line-height: 1;
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .navigation-list li:hover,
@@ -512,6 +511,11 @@ input[type="search"]::placeholder {
 
 .navigation-list li:active {
   background-color: var(--basic-grey-darkest);
+}
+
+.navigation-list a {
+  display: block;
+  padding: 20px 31px;
 }
 
 .goods-services {
@@ -753,6 +757,7 @@ input[type="search"]::placeholder {
   height: 40px;
   background-image: url("../img/svg/icon-left.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .button-slider-controls .slider-controls-item-2::before {
@@ -765,6 +770,7 @@ input[type="search"]::placeholder {
   height: 40px;
   background-image: url("../img/svg/icon-right.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .slider-list p {
@@ -1144,7 +1150,6 @@ input[type="search"]::placeholder {
   display: grid;
   grid-template-columns: 240px 619px;
   grid-column-gap: 80px;
-
 }
 
 .services-slider input {
@@ -1345,6 +1350,7 @@ input[type="search"]::placeholder {
   background-color: var(--basic-red);
   padding: 11px 40px;
   border: none;
+  cursor: pointer;
 }
 
 .button-company {
@@ -1368,6 +1374,7 @@ input[type="search"]::placeholder {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 56px;
+  padding-right: 57px;
   font-size: 21px;
   line-height: 21px;
   color: var(--color-black);
@@ -1456,7 +1463,7 @@ input[type="search"]::placeholder {
   text-transform: uppercase;
 }
 
-.breadcrumbs li {
+.breadcrumbs li:not(:last-child) {
   background-image: url("../img/svg/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -1664,8 +1671,19 @@ input[type="search"]::placeholder {
   line-height: 18px;
   text-transform: uppercase;
   border: none;
+  outline: none;
   border: 1px solid var(--color-lightest-grey);
   background-color: var(--color--white);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  border-color: var(--color-pagination-hover);
+}
+
+.button:active {
+  border-color: var(--basic-red);
 }
 
 .producers-box input,
@@ -1771,7 +1789,7 @@ input[type="search"]::placeholder {
 
 [type="checkbox"]:focus + label:before,
 [type="radio"]:focus + label:before {
-  outline: auto;
+  outline: none;
 }
 
 .sort {

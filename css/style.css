@@ -2205,6 +2205,12 @@ input[type="search"]::placeholder {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-send:hover,
+.button-send:focus {
+  background-color: var(--color-dark-red);
 }
 
 .modal-map {

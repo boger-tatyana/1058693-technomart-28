@@ -81,28 +81,27 @@
       </div>
       <div class="goods-services-down">
         <div class="slider">
-          <input class="visually-hidden radio-1" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden radio-2" type="radio" id="product-2" name="toggle">
-          <div class="button-slider-controls">
-            <label class="slider-controls-item slider-controls-item-1" for="product-1"></label>
-            <label class="slider-controls-item slider-controls-item-2" for="product-2"></label>
-          </div>
-          <div class="slider-controls">
-            <label class="slider-controls-item slider-controls-item-1" for="product-1">Первый</label>
-            <label class="slider-controls-item slider-controls-item-2" for="product-2">Второй</label>
-          </div>
           <ul class="slider-list">
-            <li class="slider-item">
+            <li class="slider-item slide-first slide-current">
               <h2>Перфораторы</h2>
               <p>Настоящие мужские игрушки</p>
               <a href="catalog.html">открыть каталог</a>
             </li>
-            <li class="slider-item">
+            <li class="slider-item slide-second">
               <h2>Дрели</h2>
               <p>Соседям на радость!</p>
               <a href="catalog.html">открыть каталог</a>
             </li>
           </ul>
+          <div class="slider-controls-middle">
+            <button class="slider-controls-middle-left" type="button" aria-label="Предыдущий слайд"></button>
+            <button class="slider-controls-middle-right" type="button" aria-label="Следующий слайд"></button>
+          </div>
+          <div class="slider-controls-bottom">
+            <button class="slider-controls-bottom-button slider-controls-current" type="button"
+              aria-label="Первый слайд"></button>
+            <button class="slider-controls-bottom-button" type="button" aria-label="Второй слайд"></button>
+          </div>
         </div>
         <div class="flex-column">
           <div class="discounts">
@@ -289,6 +288,7 @@
         </section>
         <ul class="upper-navigation">
           <li class="footer-nav"><a href="#">Компания</a></li>
+          <li class="footer-nav"><a href="#">Новости</a></li>
           <li class="footer-nav"><a href="catalog.html">Каталог</a></li>
           <li class="footer-nav"><a href="#">Доставка</a></li>
           <li class="footer-nav"><a href="#">Контакты</a></li>
@@ -356,7 +356,7 @@
     <p><img src="img/png/big-map.png" width="943" height="442"
         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
   </section>
-  <script src="js/popups-min.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>
